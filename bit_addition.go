@@ -1,4 +1,4 @@
-package demo
+package algorithm
 
 func BitAddition(a []int, b []int) []int {
 	c := make([]int, len(a))

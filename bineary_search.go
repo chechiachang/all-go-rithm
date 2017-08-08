@@ -1,4 +1,4 @@
-package demo
+package algorithm
 
 func BinearySearch(a []int, b int) int {
 	if a[len(a)/2] == b {

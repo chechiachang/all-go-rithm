@@ -1,4 +1,4 @@
-package demo
+package algorithm
 
 //TODO incorrect
 func CheckTwoSum(a []int, b int) bool {

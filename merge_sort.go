@@ -1,4 +1,4 @@
-package demo
+package algorithm
 
 func Merge(a []int, p, q, r int) {
 	b := make([]int, len(a))

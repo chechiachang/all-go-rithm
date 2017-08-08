@@ -1,4 +1,4 @@
-package demo
+package algorithm
 
 var (
 	T1 = []int{1, 9, 2, 8, 3, 7, 4, 6, 5, 0}
