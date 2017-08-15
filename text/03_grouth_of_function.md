@@ -52,4 +52,7 @@ for n <- real number
 
 # Modular arithmetic
 
+a mod n = a - f(a/n)
+
+n if remainder or residue
 
