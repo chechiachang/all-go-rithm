@@ -29,4 +29,27 @@ O(g(n)) = {
 }
 
 
+# Monotonicity
+
+f(n) is monotonically increasing if m <= n implies	f(m) <= f(n)
+		monotonically decreasing					f(m) >= f(n)
+		strictly increasing		 if m < n implies	f(m) < f(n)
+				 decreasing							f(m) > f(n)
+
+# Floors & ceilings
+
+x - 1 < floor(x) <= x <= ceiling(x) <= x + 1
+
+for n <- integer
+	f(n/2) + c(n/2) = n
+
+for n <- real number
+	c( c(n/a) / b ) = c( n/ab )
+	f( f(n/a) / b ) = f( n/ab )
+
+	c(a/b) <= (a + (b - 1))/b
+	f(a/b) <= (a - (b = 1))/b
+
+# Modular arithmetic
+
 
