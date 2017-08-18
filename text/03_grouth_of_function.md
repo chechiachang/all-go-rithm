@@ -52,7 +52,30 @@ for n <- real number
 
 # Modular arithmetic
 
-a mod n = a - f(a/n)
+a mod n = a - f(a/n)n
 
-n if remainder or residue
+floor(a/n) = a/n - c, where c is the remainer
+
+n is remainder or residue
+
+a % n = b % n 
+-> a -= b ( mod n ), a is equivilent to b, modulo to n
+
+# Polynominal
+
+a polynominal in n of degree d
+i <- range 0 to d {
+	return += ai * n^i
+}
+
+coefficients a0, ... ai,... ad, where ad =/= 0
+
+f(n) is polynominally bound if f(n) = O(n^k)
+
+# Exponentials
+
+-> lim (n -> infinity) n^b / a^n
+->
+n^b = o(a^n)
+
 
