@@ -75,7 +75,19 @@ f(n) is polynominally bound if f(n) = O(n^k)
 # Exponentials
 
 -> lim (n -> infinity) n^b / a^n
-->
-n^b = o(a^n)
+exponential beats polynominal -> n^b = o(a^n)
+
+e^x = lim(0, inf) x^i/i! = 1 + x + x^2/2! + ...
+e^x >= 1 + x
+
+1 + x <= e^x <= 1 + x + x ^2
+
+lim(n-> inf) (1 + x/n)^n = e^x
+
+# Logarithms
+
+
+
+
 
 
