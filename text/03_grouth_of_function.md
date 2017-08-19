@@ -87,6 +87,18 @@ lim(n-> inf) (1 + x/n)^n = e^x
 # Logarithms
 
 
+a = b^logb\a
+
+	log a = log (b^logb\a) = logb * logb\a = logb * loga/logb = loga
+
+logc\ab = logc\a + logc\b
+
+	logc\ab = log(ab) / logc = loga/logc + logb/logc = logc\a + logc\b
+
+logb\a^n = nlogb\a
+
+	logb\a^n = logb(a * a * a ...* a) = nlogb\a
+
 
 
 
