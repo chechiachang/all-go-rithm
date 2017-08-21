@@ -99,6 +99,12 @@ logb\a^n = nlogb\a
 
 	logb\a^n = logb(a * a * a ...* a) = nlogb\a
 
+# Factorial
+
+Stirling approximation:
+	
+		n! -> (2Pin)^-2 * (n/e)^n
+
 
 
 
