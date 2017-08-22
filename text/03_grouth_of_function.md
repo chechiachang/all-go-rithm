@@ -105,6 +105,13 @@ Stirling approximation:
 	
 		n! -> (2Pin)^-2 * (n/e)^n
 
+# Functional iteration
+
+# iterated logarithm
+
+lg* n = min {i>=0 : lg(i)(n) <= 1}
+
+# Fibonacci
 
 
 
