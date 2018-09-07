@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-func testUniqueMorseRepresentations(t *testing.T) {
+func TestUniqueMorseRepresentations(t *testing.T) {
 
 	words := []string{"gin", "zen", "gig", "msg"}
 
