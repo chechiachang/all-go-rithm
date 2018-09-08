@@ -11,8 +11,7 @@ func TestAddTwoNumbers(t *testing.T) {
 		Next: &ListNode{
 			Val: 4,
 			Next: &ListNode{
-				Val:  3,
-				Next: nil,
+				Val: 3,
 			},
 		},
 	}
@@ -22,24 +21,20 @@ func TestAddTwoNumbers(t *testing.T) {
 		Next: &ListNode{
 			Val: 6,
 			Next: &ListNode{
-				Val:  4,
-				Next: nil,
+				Val: 7,
 			},
 		},
 	}
 
-	assert.Equal(
-		t,
-		&ListNode{
-			Val: 7,
+	output := &ListNode{
+		Val: 7,
+		Next: &ListNode{
+			Val: 0,
 			Next: &ListNode{
-				Val: 0,
-				Next: &ListNode{
-					Val:  8,
-					Next: nil,
-				},
+				Val: 8,
 			},
 		},
-		addTwoNumbers(l1, l2),
-	)
+	}
+
+	assert.Equal(t, output.value(), addTwoNumbers(l1, l2).value())
 }
