@@ -7,6 +7,7 @@ import (
 
 func TestHighestEarning(t *testing.T) {
 	assert.Equal(t, 0, HighestEarning(""))
+	assert.Equal(t, 12, HighestEarning("1 2"))
 	assert.Equal(t, 0, HighestEarning("adsf"))
 	assert.Equal(t, 3, HighestEarning("1,2"))
 	assert.Equal(t, 0, HighestEarning("1,,,,2"))
