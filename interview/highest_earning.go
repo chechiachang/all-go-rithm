@@ -1,7 +1,6 @@
 package interview
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -11,7 +10,6 @@ func HighestEarning(s string) int {
 		strings.Replace(s, " ", "", -1),
 		",",
 	)
-	fmt.Println(inputs)
 
 	earning := 0
 	highest := 0
