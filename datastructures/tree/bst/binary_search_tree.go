@@ -92,6 +92,24 @@ func PostorderPrint(n *TreeNode) string {
 	return ""
 }
 
-func (b *BinarySearchTree) Levelorder() {
-	// TODO
+func LevelorderPrint(n *TreeNode) string {
+	queue := []*TreeNode{}
+	queue = append(queue, n)
+
+	r := ""
+
+	for len(queue) > 0 {
+		current := queue[0]
+		r += current.data
+		queue = queue[1:]
+
+		if current.left != nil {
+			queue = append(queue, current.left)
+		}
+
+		if current.right != nil {
+			queue = append(queue, current.right)
+		}
+	}
+	return r
 }

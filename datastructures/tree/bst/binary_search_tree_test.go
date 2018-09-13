@@ -30,4 +30,5 @@ func TestInorder(t *testing.T) {
 	assert.Equal(t, "1234567", InorderPrint(bst.root))
 	assert.Equal(t, "4321567", PreorderPrint(bst.root))
 	assert.Equal(t, "1237654", PostorderPrint(bst.root))
+	assert.Equal(t, "4352617", LevelorderPrint(bst.root))
 }
