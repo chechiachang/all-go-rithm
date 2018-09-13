@@ -4,7 +4,7 @@ type TreeNode struct {
 	left   *TreeNode
 	right  *TreeNode
 	parent *TreeNode
-	data   int
+	data   string
 	key    int
 }
 
@@ -22,7 +22,7 @@ func (b *BinarySearchTree) successor() *TreeNode {
 	return b.root
 }
 
-func (b *BinarySearchTree) Insert(key, value int) {
+func (b *BinarySearchTree) Insert(key int, value string) {
 	newNode := &TreeNode{
 		key:  key,
 		data: value,
@@ -71,8 +71,12 @@ func (b *BinarySearchTree) Search(key int) *TreeNode {
 	return current
 }
 
-func (b *BinarySearchTree) InorderPrint() {
-	// TODO
+func InorderPrint(n *TreeNode) string {
+	if n != nil {
+		// L V R
+		return InorderPrint(n.left) + n.data + InorderPrint(n.right)
+	}
+	return ""
 }
 
 func (b *BinarySearchTree) Levelorder() {
