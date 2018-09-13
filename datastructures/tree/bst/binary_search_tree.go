@@ -73,8 +73,21 @@ func (b *BinarySearchTree) Search(key int) *TreeNode {
 
 func InorderPrint(n *TreeNode) string {
 	if n != nil {
-		// L V R
-		return InorderPrint(n.left) + n.data + InorderPrint(n.right)
+		return InorderPrint(n.left) + n.data + InorderPrint(n.right) // L V R
+	}
+	return ""
+}
+
+func PreorderPrint(n *TreeNode) string {
+	if n != nil {
+		return n.data + PreorderPrint(n.left) + PreorderPrint(n.right) // V L R
+	}
+	return ""
+}
+
+func PostorderPrint(n *TreeNode) string {
+	if n != nil {
+		return PostorderPrint(n.left) + PostorderPrint(n.right) + n.data // L R V
 	}
 	return ""
 }
