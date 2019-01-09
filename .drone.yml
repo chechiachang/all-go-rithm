@@ -1,0 +1,31 @@
+---
+kind: pipeline
+name: go-1-11
+
+workspace:
+  base: /go
+  path: src/github.com/chechiachang/all-go-rithm
+
+steps:
+- name: test
+  image: golang:1.11
+  commands:
+  - go get
+  - go test
+
+---
+kind: pipeline
+name: go-1-10
+
+workspace:
+  base: /go
+  path: src/github.com/chechiachang/all-go-rithm
+
+steps:
+- name: test
+  image: golang:1.10
+  commands:
+  - go get
+  - go test
+
+---
