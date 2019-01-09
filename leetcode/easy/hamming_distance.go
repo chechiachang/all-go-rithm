@@ -1,7 +1,7 @@
 package easy
 
 import (
-	"fmt"
+	//"fmt"
 	"strconv"
 )
 
@@ -16,7 +16,7 @@ func HammingDistance(x int, y int) int {
 			}
 			x = x >> 1
 			y = y >> 1
-			fmt.Printf("x %v y %v count %v \n", x, y, count)
+			//fmt.Printf("x %v y %v count %v \n", x, y, count)
 		}
 		return count
 	}
@@ -34,19 +34,19 @@ func HammingDistance2(x int, y int) int {
 				if xs[i] != ys[i] {
 					count++
 				}
-				fmt.Printf("xs[i] %v ys[i] %v count %v \n", xs[i], ys[i], count)
+				//fmt.Printf("xs[i] %v ys[i] %v count %v \n", xs[i], ys[i], count)
 			}
 			count += len(xs) - len(ys)
-			fmt.Printf("(%v, %v) count %v xs %v ys %v \n", x, y, count, len(xs), len(ys))
+			//fmt.Printf("(%v, %v) count %v xs %v ys %v \n", x, y, count, len(xs), len(ys))
 		} else {
 			for i, _ := range xs {
 				if xs[i] != ys[i] {
 					count++
 				}
-				fmt.Printf("xs[i] %v ys[i] %v count %v \n", xs[i], ys[i], count)
+				//fmt.Printf("xs[i] %v ys[i] %v count %v \n", xs[i], ys[i], count)
 			}
 			count += len(ys) - len(xs)
-			fmt.Printf("(%v, %v) count %v xs %v ys %v \n", x, y, count, len(xs), len(ys))
+			//fmt.Printf("(%v, %v) count %v xs %v ys %v \n", x, y, count, len(xs), len(ys))
 		}
 		return count
 	}
