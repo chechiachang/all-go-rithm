@@ -1,6 +1,6 @@
 ---
 kind: pipeline
-name: go-1-11
+name: default
 
 workspace:
   base: /go
@@ -11,7 +11,7 @@ steps:
   image: golang:1.11
   commands:
   - go get
-  - go test
+  - go test -v ./...
 
 ---
 kind: pipeline
@@ -26,6 +26,6 @@ steps:
   image: golang:1.10
   commands:
   - go get
-  - go test
+  - go test -v ./...
 
 ---
