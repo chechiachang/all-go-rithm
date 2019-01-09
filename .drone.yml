@@ -10,7 +10,7 @@ steps:
 - name: test
   image: golang:1.11
   commands:
-  - go get
+  - go get -v ./...
   - go test -v ./...
 
 ---
@@ -25,7 +25,7 @@ steps:
 - name: test
   image: golang:1.10
   commands:
-  - go get
+  - go get -v ./...
   - go test -v ./...
 
 ---
