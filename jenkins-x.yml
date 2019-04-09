@@ -1,0 +1,7 @@
+pipelineConfig:
+  agent: {}
+  pipelines:
+    release:
+      setup:
+        steps:
+        - sh: echo yes
