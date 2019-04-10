@@ -10,8 +10,8 @@ steps:
 - name: test
   image: golang:1.11
   commands:
-  - go get -v ./...
-  - go test -v ./...
+  - make install
+  - make test
 
 ---
 kind: pipeline
@@ -25,7 +25,7 @@ steps:
 - name: test
   image: golang:1.10
   commands:
-  - go get -v ./...
-  - go test -v ./...
+  - make install
+  - make test
 
 ---
